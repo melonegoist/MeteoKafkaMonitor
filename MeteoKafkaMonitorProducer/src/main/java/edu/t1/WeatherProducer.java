@@ -25,7 +25,7 @@ public class WeatherProducer {
     public static double getRandomTemperature() {
         Random rand = new Random();
 
-        return Math.round(rand.nextDouble() * 100.0) / 100.0;
+        return Math.round(rand.nextDouble() * 100.0) % 30;
     }
 
     public static void main(String[] args) {
